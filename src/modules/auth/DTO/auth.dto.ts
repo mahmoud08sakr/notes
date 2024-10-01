@@ -11,3 +11,12 @@ export class signUpDTO {
     @IsStrongPassword()
     password: string
 }
+
+
+export class signInDTO {
+    @IsNotEmpty()
+    @IsEmail()
+    email: string
+    @IsNotEmpty()
+    password: string
+}
