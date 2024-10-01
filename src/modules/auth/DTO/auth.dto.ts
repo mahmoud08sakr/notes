@@ -3,7 +3,6 @@ import { IsEmail, IsNotEmpty, IsStrongPassword, MaxLength, MinLength } from "cla
 
 
 export class signUpDTO {
-
     @MaxLength(20)
     @MinLength(2)
     name: string;
